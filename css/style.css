@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+h3 {
+  font-family: "Karla", sans-serif;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #40bfc1;
+  background-color: #dfcdc3;
+}
+
+nav {
+  width: 15%;
+  height: auto;
+  background: #ccc;
+  padding: 20px;
+  font-family: "Karla", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #ff6f5e;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  padding: 20px;
+  width: 60%;
+  background-color: #f1f1f1;
+  height: auto;
+}
+article ul {
+  list-style-type: none;
+}
+
+.step1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #3c4245;
+}
+
+.step2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #3c4245;
+  background-color: #5f6769;
+}
+
+.step3 {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: #3c4245;
+  background-color: #ff6f5e;
+}
+
+.step4 {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #40bfc1;
+}
+
+.step5 {
+  padding: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #3c4245;
+}
+
+#flexbox {
+  background: #dfcdc3;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cuadradoUno {
+  background-color: #293462;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+.cuadradoDos {
+  background-color: #216583;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+.cuadradoTres {
+  background-color: #00818a;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+}
+
+div.flexcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: auto;
+  background-color: #fafafa;
+  min-width: 999px;
+  padding: 80px 0;
+  background: url("https://s3.us-east-2.amazonaws.com/tales-prod-mediabucket-1w7ck12fqo2qd/assets/images/2016/8/nSId1NwVWtRW_660x0_mtdhGWCw.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+
+  article {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+
+  aside {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+}
+@media (max-width: 600px) {
+  div.flexcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
+

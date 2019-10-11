@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Mixin</title>
+</head>
+<body>
+
+        <header>
+                <h2>@Mixin</h2>
+              </header>
+              
+              <div class="flexcontainer">
+                  <nav>
+                  <ul>
+                      <li><a class="active" href="#home">Home</a></li>
+                      <li><a href="#">Welcome to SASS</a></li>
+                      <li><a href="#">How to mash your CSS & SCSS</a></li>
+                      <li><a href="#">@Include</a></li>
+                      <li><a href="#">Examples</a></li>
+                  </ul>
+                </nav>
+                
+                <article>
+                  <h2>Step by step</h2>
+                  <div class="step1">
+                      <h3>Make your folders</h3>
+                      <ul class="step1list">
+                            <li>index.html</li>
+                            <li>CSS (style.css)</li>
+                            <li>SASS (style.scss</li>
+                        </ul>
+                    </div>
+                  <div class="step2">
+                    <h3>href=.css + Terminal</h3>  
+                    <p>sass --watch sass:scc</p>
+                    </div>
+                  <div class="step3">
+                    <h3>Organize your stylesheets</h3>
+                    <ul class="step3list">
+                            <li>style.scss</li>
+                            <li>variables.scss</li>
+                            <li>mixin.scss</li>
+                        </ul>  
+                    </div>
+                  <div class="step4">
+                    <h3>Structure</h3>  
+                    <pre>@mixin nn($variabili1, variabili2) {
+                        background: $variabili1;
+                        width: $variabili2;
+                        hight: 200px;
+                    }
+                    </pre>
+                    </div>
+                  <div class="step5">
+                    <h3>@Import & @Include</h3>  
+                    <pre>class {
+                        @include nn(black, 200px)
+                    }
+                    </pre>
+                    </div>         
+              </div>
+              
+              <section id="flexbox">
+                  <h1>Esempio</h1>
+                  <div class="cuadradoUno">
+                      <p>I'm a @MIXIN square</p>
+                  </div>
+                  <div class="cuadradoDos">
+                      <p>I'm a @MIXIN square</p>
+                  </div>
+                  <div class="cuadradoTres">
+                      <p>I'm a @MIXIN square</p>
+                  </div>
+              </section>
+
+              <footer>
+                <p>Footer</p>
+              </footer>
+              
+              </body>
+
+
+
+
+
+
+
+
+
